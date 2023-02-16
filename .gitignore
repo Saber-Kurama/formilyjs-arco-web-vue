@@ -27,3 +27,6 @@ doc-site
 .lerna-changelog
 .history
 .lint-report.log
+.temp
+.cache
+*.log

@@ -1,6 +1,6 @@
-const prism = require('prismjs')
-const escapeHtml = require('escape-html')
-const loadLanguages = require('prismjs/components/index')
+import prism from 'prismjs'
+import escapeHtml from 'escape-html'
+import loadLanguages from 'prismjs/components/index'
 
 function wrap(code, lang) {
   if (lang === 'text') {
@@ -27,7 +27,7 @@ function getLangCodeFromExtension(extension) {
   return extensionMap[extension] || extension
 }
 
-module.exports = (str, lang) => {
+export default function (str, lang) {
   if (!lang) {
     return wrap(str, 'text')
   }
