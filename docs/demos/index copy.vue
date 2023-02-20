@@ -1,10 +1,12 @@
 <template>
+  <AInputNumber :modelValue="refNum"></AInputNumber>
   <FormProvider :form="form">
     <Space>
       <Field
         name="price"
         title="价格"
         :initialValue="5.2"
+        :decorator="[FormItem]"
         :component="[
           InputNumber,
           {
@@ -15,11 +17,12 @@
           },
         ]"
       />
-
+      <FormItem>×</FormItem>
       <Field
         name="count"
         title="数量"
         :initialValue="100"
+        :decorator="[FormItem]"
         :component="[
           InputNumber,
           {
@@ -32,31 +35,32 @@
       />
       <FormConsumer>
         <template #default="{ form }">
-          = {{ `${form.values.price * form.values.count} 元` }}
+          <FormItem>
+            = {{ `${form.values.price * form.values.count} 元` }}</FormItem
+          >
         </template>
       </FormConsumer>
+      <FormItem> = {{ `${form.values.price} 元` }}</FormItem>
     </Space>
+    <Button @click="onClick">提交</Button>
   </FormProvider>
-  <Button @click="onClick">提交</Button>
 </template>
 
 <script lang="ts" setup>
 import { createForm } from '@formily/core'
-import { ElFormItem as FormItem, ElSpace as Space } from 'element-plus'
+import {
+  FormItem,
+  Space,
+  Button,
+  InputNumber as AInputNumber,
+} from '@arco-design/web-vue'
+// @ts-ignore
 import { InputNumber } from '@formily/arco-web-vue/src/index'
 import { FormProvider, FormConsumer, Field } from '@formily/vue'
-import { onRenderTracked, onRenderTriggered } from 'vue'
-
-onRenderTracked((event) => {
-  debugger
-})
-
-onRenderTriggered((event) => {
-  debugger
-})
+import { ref } from 'vue'
+const refNum = ref(10)
 
 const form = createForm()
-
 const onClick = () => {
   setTimeout(() => {
     // form.values.price = 10
