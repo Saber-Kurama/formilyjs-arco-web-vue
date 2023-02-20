@@ -11,62 +11,13 @@ const _TransformElInputNumber = transformComponent<InputNumberProps>(
     change: 'update:modelValue',
   }
 )
-const _AInputNumber = defineComponent({
-  name: 'FAInputNumber124',
-  inheritAttrs: false,
-  props: ['onChange', 'modelValue', 'onBlur', 'value'],
-  setup(props, { attrs, slots, emit }) {
-    const newAttrs = {
-      ...attrs,
-    }
-    delete newAttrs.value
-    watch(
-      () => props.value,
-      (val) => {
-        // console.log('valssss', val)
-      }
-    )
-    watch(props.value, (val) => {
-      // console.log('valssssaaa', val)
-    })
-    return () => {
-      return h('div', [`${props.value}`])
-      return h(
-        AInputNumber,
-        {
-          ...props,
-          ...newAttrs,
-          onChange: (val) => {
-            // console.log('修改值', val)
-            props.onChange(val)
-            emit('update:modelValue', val)
-          },
-          onBlur: (val) => {
-            // console.log('xxxx')
-          },
-        },
-        slots
-      )
-    }
-  },
-})
+
 export const InputNumber = connect(
-  _AInputNumber,
-  mapProps(),
-  // {
-  //   value: 'modelValue',
-  //   readOnly: 'readonly',
-  // }
-  // (props) => {
-  //   let controlsPosition = 'right'
-  //   if (props.controlsPosition) {
-  //     controlsPosition = props.controlsPosition
-  //   }
-  //   return {
-  //     controlsPosition,
-  //     modelValue: props.modelValue,
-  //   }
-  // }
+  _TransformElInputNumber,
+  mapProps({
+    value: 'modelValue',
+    readOnly: 'readonly',
+  }),
   mapReadPretty({})
 )
 
