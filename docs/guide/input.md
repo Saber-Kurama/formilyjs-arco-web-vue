@@ -10,7 +10,7 @@
 
 <dumi-previewer demoPath="guide/input/json-schema" />
 
-## Template 案例
+## Template 案例 
 
 <dumi-previewer demoPath="guide/input/template" />
 

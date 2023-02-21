@@ -5,7 +5,7 @@ import { defineComponent, h, watch } from 'vue'
 
 export type InputNumberProps = typeof AInputNumber
 
-const _TransformElInputNumber = transformComponent<InputNumberProps>(
+const TransformAInputNumber = transformComponent<InputNumberProps>(
   AInputNumber,
   {
     change: 'update:modelValue',
@@ -13,7 +13,7 @@ const _TransformElInputNumber = transformComponent<InputNumberProps>(
 )
 
 export const InputNumber = connect(
-  _TransformElInputNumber,
+  TransformAInputNumber,
   mapProps({
     value: 'modelValue',
     readOnly: 'readonly',

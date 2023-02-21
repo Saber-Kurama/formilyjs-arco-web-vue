@@ -1,5 +1,5 @@
 <template>
-  <FormProvider :form="form">
+  <!-- <FormProvider :form="form">
     <SchemaField>
       <SchemaStringField
         name="input"
@@ -15,27 +15,28 @@
       />
     </SchemaField>
     <Submit @submit="log">提交</Submit>
-  </FormProvider>
+  </FormProvider> -->
+  <div>markup Scheama</div>
 </template>
 
 <script>
-import { createForm } from '@formily/core'
-import { createSchemaField, FormProvider } from '@formily/vue'
-import { FormItem, Input, Submit } from '@formily/@arco/web-vue'
+// import { createForm } from '@formily/core'
+// import { createSchemaField, FormProvider } from '@formily/vue'
+// import { FormItem, Input, Submit } from '@formily/arco-web-vue/src/index'
 
-const form = createForm()
-const fields = createSchemaField({
-  components: {
-    FormItem,
-    Input,
-  },
-})
+// const form = createForm()
+// const fields = createSchemaField({
+//   components: {
+//     FormItem,
+//     Input,
+//   },
+// })
 
 export default {
-  components: { FormProvider, ...fields, Submit },
+  // components: { FormProvider, ...fields, Submit },
   data() {
     return {
-      form,
+      // form,
     }
   },
   methods: {

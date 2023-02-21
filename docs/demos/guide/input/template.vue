@@ -10,21 +10,22 @@
       name="textarea"
       title="文本框"
       :decorator="[FormItem]"
-      :component="[Input.TextArea]"
+      :component="[Input]"
     />
-    <Submit @submit="log">提交</Submit>
+    <Button @submit="log">提交</Button>
   </FormProvider>
 </template>
 
 <script>
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/vue'
-import { FormItem, Input, Submit } from '@formily/@arco/web-vue'
+import { FormItem, Button } from '@arco-design/web-vue'
+import { Input } from '@formily/arco-web-vue/src/index'
 
 const form = createForm()
 
 export default {
-  components: { FormProvider, Field, Submit },
+  components: { FormProvider, Field, Button },
   data() {
     return {
       FormItem,
