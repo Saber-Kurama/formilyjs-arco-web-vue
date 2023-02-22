@@ -16,11 +16,11 @@ footer: Open-source MIT Licensed | Copyright © 2019-present
 
 ## 安装
 
-vue2:
+vue3:
 
 ```bash
 $ npm install --save @arco/web-vue
-$ npm install --save @formily/core @formily/vue @vue/composition-api @formily/@arco/web-vue
+$ npm install --save @formily/core @formily/vue @dangojs/formily-arco-web-vue
 ```
 
 ## 快速开始

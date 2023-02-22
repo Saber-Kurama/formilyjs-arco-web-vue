@@ -13,7 +13,7 @@ import {
   Input,
   Select,
   Submit,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const schema = {
   type: 'object',

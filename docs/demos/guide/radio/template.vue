@@ -23,7 +23,7 @@
 <script>
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/vue'
-import { FormItem, Radio, Submit } from '@formily/@arco/web-vue'
+import { FormItem, Radio, Submit } from '@dangojs/formily-arco-web-vue'
 
 const form = createForm()
 

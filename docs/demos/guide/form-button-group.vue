@@ -34,7 +34,7 @@ import {
   FormItem,
   Input,
   Select,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const fields = createSchemaField({ components: { FormItem, Input, Select } })
 

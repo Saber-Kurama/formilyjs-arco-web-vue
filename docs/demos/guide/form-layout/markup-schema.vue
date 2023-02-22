@@ -33,7 +33,12 @@
 <script>
 import { createForm } from '@formily/core'
 import { createSchemaField, FormProvider } from '@formily/vue'
-import { FormLayout, FormItem, Input, Select } from '@formily/@arco/web-vue'
+import {
+  FormLayout,
+  FormItem,
+  Input,
+  Select,
+} from '@dangojs/formily-arco-web-vue'
 
 const fields = createSchemaField({
   components: { FormLayout, FormItem, Input, Select },

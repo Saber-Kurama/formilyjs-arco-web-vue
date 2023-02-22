@@ -100,7 +100,7 @@ import {
   Space,
   FormButtonGroup,
   Submit,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const fields = createSchemaField({
   components: { FormItem, FormLayout, Input, Space },

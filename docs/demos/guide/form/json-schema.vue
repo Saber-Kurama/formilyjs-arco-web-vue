@@ -36,8 +36,10 @@ const { SchemaField } = createSchemaField({
     Input,
   },
 })
-const onclick = () => {
+const onclick = async () => {
+  await form?.validate()
   console.log('form', form)
+  form?.submit(onSubmit)
 }
 const onSubmit = (value) => {
   console.log(value)
@@ -54,7 +56,9 @@ const onSubmit = (value) => {
     <Form :form="form" :layout="layout">
       <SchemaField :schema="schema" />
       <!-- <Submit @submit="onSubmit">提交</Submit> -->
-      <Button @click="onclick">提交</Button>
+      <FormItem>
+        <Button @click="onclick">提交</Button>
+      </FormItem>
     </Form>
   </Space>
 </template>

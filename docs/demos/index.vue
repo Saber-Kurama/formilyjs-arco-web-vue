@@ -5,7 +5,7 @@
         name="price"
         title="价格"
         :initialValue="5.2"
-        :decorator="FormItem"
+        :decorator="[FormItem]"
         :component="[
           InputNumber,
           {
@@ -16,12 +16,12 @@
           },
         ]"
       />
-      x
+      <FormItem>x</FormItem>
       <Field
         name="count"
         title="数量"
         :initialValue="100"
-        :decorator="FormItem"
+        :decorator="[FormItem]"
         :component="[
           InputNumber,
           {
@@ -34,18 +34,19 @@
       />
       <FormConsumer>
         <template #default="{ form }">
-          = {{ `${form.values.price * form.values.count} 元` }}
+          <FormItem>
+            = {{ `${form.values.price * form.values.count} 元` }}</FormItem
+          >
         </template>
       </FormConsumer>
-      <Button @click="onClick">提交</Button>
     </Space>
   </FormProvider>
 </template>
 
 <script lang="ts" setup>
 import { createForm } from '@formily/core'
-import { FormItem, Space, Button } from '@arco-design/web-vue'
-import { InputNumber } from '@formily/arco-web-vue/src/index'
+import { Space, Button } from '@arco-design/web-vue'
+import { InputNumber, FormItem } from '@dangojs/formily-arco-web-vue'
 import { FormProvider, FormConsumer, Field } from '@formily/vue'
 import { onRenderTracked, onRenderTriggered } from 'vue'
 
@@ -58,12 +59,4 @@ onRenderTriggered((event) => {
 })
 
 const form = createForm()
-
-const onClick = () => {
-  setTimeout(() => {
-    // form.values.price = 10
-    form.setValuesIn('price', 10)
-    console.log('form', form)
-  }, 3000)
-}
 </script>

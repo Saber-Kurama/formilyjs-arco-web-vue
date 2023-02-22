@@ -14,7 +14,7 @@ import {
   ArrayTable,
   Input,
   Editable,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const fields = createSchemaField({
   components: {

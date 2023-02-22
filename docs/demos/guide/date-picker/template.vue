@@ -101,7 +101,12 @@
 <script>
 import { createForm } from '@formily/core'
 import { Field, ArrayField } from '@formily/vue'
-import { Form, FormItem, DatePicker, Submit } from '@formily/@arco/web-vue'
+import {
+  Form,
+  FormItem,
+  DatePicker,
+  Submit,
+} from '@dangojs/formily-arco-web-vue'
 
 const form = createForm()
 

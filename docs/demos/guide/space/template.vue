@@ -104,7 +104,7 @@ import {
   Submit,
   Space,
   FormButtonGroup,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const form = createForm()
 

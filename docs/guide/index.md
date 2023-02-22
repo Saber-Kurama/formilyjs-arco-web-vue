@@ -2,7 +2,7 @@
 
 ## 介绍
 
-@formily/@arco/web-vue 是基于 ArcoWebVue 封装的针对表单场景专业级(Professional)组件库，它主要有以下几个特点：
+@dangojs/formily-arco-web-vue 是基于 ArcoWebVue 封装的针对表单场景专业级(Professional)组件库，它主要有以下几个特点：
 
 - 更丰富的组件体系
 
@@ -61,14 +61,14 @@
 
 ```bash
 $ npm install --save @arco/web-vue
-$ npm install --save @formily/core @formily/vue @vue/composition-api @formily/@arco/web-vue
+$ npm install --save @formily/core @formily/vue @vue/composition-api @dangojs/formily-arco-web-vue
 ```
 
 ## 按需打包
 
 `ArcoWebVue` 按需引入参见 [https://element.eleme.io/#/zh-CN/component/quickstart#an-xu-yin-ru](https://element.eleme.io/#/zh-CN/component/quickstart#an-xu-yin-ru)
 
-`@formily/@arco/web-vue`按需引入需借助 `babel-plugin-import`
+`@dangojs/formily-arco-web-vue`按需引入需借助 `babel-plugin-import`
 
 #### 安装 `babel-plugin-import`
 
@@ -97,7 +97,7 @@ yarn add babel-plugin-import --dev
     [
       "import",
       {
-        "libraryName": "@formily/@arco/web-vue",
+        "libraryName": "@dangojs/formily-arco-web-vue",
         "libraryDirectory": "esm",
         "style": true
       }

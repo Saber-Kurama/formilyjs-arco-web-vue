@@ -1,9 +1,9 @@
-# @formily/@arco/web-vue
+# @dangojs/formily-arco-web-vue
 
 > Formily Component Adaptor
 
 ## Install
 
 ```bash
-npm install @formily/@arco/web-vue --save
+npm install @dangojs/formily-arco-web-vue --save
 ```

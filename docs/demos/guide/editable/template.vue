@@ -75,7 +75,7 @@ import {
   Input,
   DatePicker,
   Editable,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 export default {
   components: {

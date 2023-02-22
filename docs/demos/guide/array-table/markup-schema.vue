@@ -98,7 +98,7 @@ import {
   ArrayTable,
   Input,
   Editable,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 import { Button, Alert } from '@arco/web-vue'
 
 const fields = createSchemaField({

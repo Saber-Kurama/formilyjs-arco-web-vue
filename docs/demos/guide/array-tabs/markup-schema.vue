@@ -55,7 +55,7 @@ import {
   Input,
   Select,
   ArrayTabs,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 import { Button } from '@arco/web-vue'
 
 const SchemaField = createSchemaField({

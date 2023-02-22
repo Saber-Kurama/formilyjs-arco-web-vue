@@ -9,7 +9,13 @@
 import { createForm } from '@formily/core'
 import { createSchemaField } from '@formily/vue'
 import { action } from '@formily/reactive'
-import { Form, FormItem, Select, Submit, Reset } from '@formily/@arco/web-vue'
+import {
+  Form,
+  FormItem,
+  Select,
+  Submit,
+  Reset,
+} from '@dangojs/formily-arco-web-vue'
 
 const schema = {
   type: 'object',

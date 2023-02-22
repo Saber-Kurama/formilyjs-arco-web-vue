@@ -1,4 +1,4 @@
 export * from './form'
 export * from './form-item'
-export * from './input/index'
-export * from './input-number/index'
+export * from './input'
+export * from './input-number'

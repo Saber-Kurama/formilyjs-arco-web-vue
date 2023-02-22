@@ -1,9 +1,9 @@
-# @formily/@arco/web-vue-renderer
+# @dangojs/formily-arco-web-vue-renderer
 
 > Formily Designable Settings Form
 
 ## Install
 
 ```bash
-npm install @formily/@arco/web-vue-renderer --save
+npm install @dangojs/formily-arco-web-vue-renderer --save
 ```

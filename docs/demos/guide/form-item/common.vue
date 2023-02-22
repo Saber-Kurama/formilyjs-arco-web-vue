@@ -403,7 +403,7 @@ import {
   DatePicker,
   FormLayout,
   TimePicker,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const SuccessIcon = {
   functional: true,

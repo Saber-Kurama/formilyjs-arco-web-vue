@@ -1,5 +1,5 @@
 {
-  "name": "@formily/arco-web-vue",
+  "name": "@dangojs/formily-arco-web-vue",
   "version": "1.0.0-alpha.0",
   "license": "MIT",
   "main": "lib",
@@ -8,9 +8,9 @@
     "npm": ">=3.0.0"
   },
   "module": "esm",
-  "umd:main": "dist/formily.@arco/web-vue.umd.production.js",
-  "unpkg": "dist/formily.@arco/web-vue.umd.production.js",
-  "jsdelivr": "dist/formily.@arco/web-vue.umd.production.js",
+  "umd:main": "dist/dangojs.formily-arco-web-vue.umd.production.js",
+  "unpkg": "dist/dangojs.formily-arco-web-vue.umd.production.js",
+  "jsdelivr": "dist/dangojs.formily-arco-web-vue.umd.production.js",
   "jsnext:main": "esm",
   "sideEffects": [
     "dist/*",

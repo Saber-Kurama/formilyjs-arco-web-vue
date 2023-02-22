@@ -1,9 +1,9 @@
-# @formily/@arco/web-vue-prototypes
+# @dangojs/formily-arco-web-vue-prototypes
 
 > Formily Designable Component Adaptor
 
 ## Install
 
 ```bash
-npm install @formily/@arco/web-vue-prototypes --save
+npm install @dangojs/formily-arco-web-vue-prototypes --save
 ```

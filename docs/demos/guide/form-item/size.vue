@@ -107,7 +107,7 @@ import {
   Switch,
   InputNumber,
   Radio,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const Div = {
   functional: true,

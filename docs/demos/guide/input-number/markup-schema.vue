@@ -20,7 +20,7 @@
 <script>
 import { createForm } from '@formily/core'
 import { createSchemaField, FormProvider } from '@formily/vue'
-import { FormItem, InputNumber, Submit } from '@formily/@arco/web-vue'
+import { FormItem, InputNumber, Submit } from '@dangojs/formily-arco-web-vue'
 
 const form = createForm()
 const fields = createSchemaField({

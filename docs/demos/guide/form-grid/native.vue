@@ -142,7 +142,7 @@
 </template>
 
 <script>
-import { FormGrid } from '@formily/@arco/web-vue'
+import { FormGrid } from '@dangojs/formily-arco-web-vue'
 
 const Cell = {
   functional: true,

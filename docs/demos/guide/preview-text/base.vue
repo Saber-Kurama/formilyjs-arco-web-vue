@@ -54,7 +54,11 @@
 <script>
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/vue'
-import { FormLayout, FormItem, PreviewText } from '@formily/@arco/web-vue'
+import {
+  FormLayout,
+  FormItem,
+  PreviewText,
+} from '@dangojs/formily-arco-web-vue'
 
 const fields = createSchemaField({
   components: {

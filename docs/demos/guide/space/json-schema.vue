@@ -19,7 +19,7 @@ import {
   Input,
   Submit,
   Space,
-} from '@formily/@arco/web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const { SchemaField } = createSchemaField({
   components: {

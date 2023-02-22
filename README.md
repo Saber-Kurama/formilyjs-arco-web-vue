@@ -2,9 +2,9 @@ English | [简体中文](./README.zh-CN.md)
 
 <p align="center">
 <img src="https://img.alicdn.com/tfs/TB1fHhZu4D1gK0jSZFyXXciOVXa-2500-1200.png">
-<img src="https://img.shields.io/npm/dt/@formily/@arco/web-vue"/>
-<img src="https://img.shields.io/npm/dm/@formily/@arco/web-vue"/>
-<a href="https://www.npmjs.com/package/@formily/@arco/web-vue"><img src="https://img.shields.io/npm/v/@formily/@arco/web-vue.svg"></a>
+<img src="https://img.shields.io/npm/dt/@dangojs/formily-arco-web-vue"/>
+<img src="https://img.shields.io/npm/dm/@dangojs/formily-arco-web-vue"/>
+<a href="https://www.npmjs.com/package/@dangojs/formily-arco-web-vue"><img src="https://img.shields.io/npm/v/@dangojs/formily-arco-web-vue.svg"></a>
 <a href="https://codecov.io/gh/formilyjs/@arco/web-vue">
   <img src="https://codecov.io/gh/formilyjs/@arco/web-vue/branch/master/graph/badge.svg?token=3V9RU8Wh9d"/>
 </a>

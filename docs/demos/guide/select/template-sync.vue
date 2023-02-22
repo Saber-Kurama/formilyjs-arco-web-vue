@@ -30,7 +30,7 @@
 <script>
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/vue'
-import { FormItem, Select, Submit } from '@formily/@arco/web-vue'
+import { FormItem, Select, Submit } from '@dangojs/formily-arco-web-vue'
 
 const form = createForm()
 

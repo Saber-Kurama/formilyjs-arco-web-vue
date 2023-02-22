@@ -25,7 +25,6 @@ export const FormItem = connect(
       required: 'required',
     },
     (props, field) => {
-      console.log(field)
       const getValidateStatus = (field) => {
         if (!isVoidField(field) && field.selfErrors?.[0]) {
           return {

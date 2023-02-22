@@ -1,7 +1,6 @@
 import { transformComponent } from '../__builtins__'
 import { connect, mapProps, mapReadPretty } from '@formily/vue'
 import { InputNumber as AInputNumber } from '@arco-design/web-vue'
-import { defineComponent, h, watch } from 'vue'
 
 export type InputNumberProps = typeof AInputNumber
 

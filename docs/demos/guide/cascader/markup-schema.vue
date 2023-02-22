@@ -22,7 +22,7 @@
 <script>
 import { createForm, onFieldReact } from '@formily/core'
 import { createSchemaField } from '@formily/vue'
-import { Form, FormItem, Cascader, Submit } from '@formily/@arco/web-vue'
+import { Form, FormItem, Cascader, Submit } from '@dangojs/formily-arco-web-vue'
 import { action } from '@formily/reactive'
 import axios from 'axios'
 
