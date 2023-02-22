@@ -1,5 +1,5 @@
 <template>
-  <Form
+  <!-- <Form
     :labelCol="6"
     :wrapperCol="10"
     :form="form"
@@ -63,45 +63,46 @@
         >切换阅读态</Button
       >
     </FormButtonGroup>
-  </Form>
+  </Form> -->
+  <div>待定</div>
 </template>
 
 <script>
-import { h } from '@vue/composition-api'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/vue'
-import {
-  Form,
-  FormItem,
-  Input,
-  PreviewText,
-  FormButtonGroup,
-} from '@dangojs/formily-arco-web-vue'
-import { Button } from '@arco-design/web-vue'
+// import { h } from '@vue/composition-api'
+// import { createForm } from '@formily/core'
+// import { createSchemaField } from '@formily/vue'
+// import {
+//   Form,
+//   FormItem,
+//   Input,
+//   PreviewText,
+//   FormButtonGroup,
+// } from '@dangojs/formily-arco-web-vue'
+// import { Button } from '@arco-design/web-vue'
 
-const fields = createSchemaField({
-  components: {
-    FormItem,
-    Input,
-    PreviewText,
-  },
-})
+// const fields = createSchemaField({
+//   components: {
+//     FormItem,
+//     Input,
+//     PreviewText,
+//   },
+// })
 
-export default {
-  components: {
-    Form,
-    FormButtonGroup,
-    Button,
-    ...fields,
-  },
-  data() {
-    const form = createForm()
-    return {
-      form,
-      vnode: () => h('div', {}, '123'),
-    }
-  },
+// export default {
+//   components: {
+//     Form,
+//     FormButtonGroup,
+//     Button,
+//     ...fields,
+//   },
+//   data() {
+//     const form = createForm()
+//     return {
+//       form,
+//       vnode: () => h('div', {}, '123'),
+//     }
+//   },
 
-  mounted() {},
-}
+//   mounted() {},
+// }
 </script>
