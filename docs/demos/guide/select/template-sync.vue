@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <Field
       name="select"
@@ -49,4 +49,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

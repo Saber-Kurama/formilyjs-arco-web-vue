@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <SchemaField>
       <SchemaVoidField x-component="FormStep" :x-component-props="{ formStep }">
@@ -117,4 +117,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->
+
+<template>
+  <div>待定</div>
+</template>

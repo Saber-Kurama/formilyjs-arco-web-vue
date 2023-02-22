@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form">
     <Field
       name="linkage"
@@ -110,4 +110,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

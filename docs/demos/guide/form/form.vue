@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form
     :form="form"
     :label-col="6"
@@ -67,4 +67,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form">
     <SchemaField
       :schema="schema"
@@ -97,4 +97,8 @@ export default {
   },
 }
 </script>
-l
+l -->
+
+<template>
+  <div>待定</div>
+</template>

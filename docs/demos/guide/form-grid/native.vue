@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <p>maxColumns 3 + minColumns 2</p>
     <FormGrid :maxColumns="3" :minColumns="2" :columnGap="4">
@@ -167,4 +167,8 @@ const Cell = {
 export default {
   components: { FormGrid, FormGridColumn: FormGrid.GridColumn, Cell },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

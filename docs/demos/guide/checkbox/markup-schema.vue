@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form">
     <SchemaField>
       <SchemaBooleanField
@@ -49,4 +49,8 @@ export default {
   },
 }
 </script>
-l
+ -->
+
+<template>
+  <div>待定</div>
+</template>

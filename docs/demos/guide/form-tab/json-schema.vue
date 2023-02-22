@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <SchemaField :schema="schema" :scope="{ formTab }" />
     <FormButtonGroup alignFormItem>
@@ -137,4 +137,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->
+
+<template>
+  <div>待定</div>
+</template>

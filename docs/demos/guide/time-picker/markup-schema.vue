@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <SchemaField>
       <SchemaStringField
@@ -56,4 +56,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <FormLayout :label-col="6" :wrapper-col="10">
       <SchemaField :schema="schema" :scope="{ formCollapse }" />
@@ -145,4 +145,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->
+
+<template>
+  <div>待定</div>
+</template>

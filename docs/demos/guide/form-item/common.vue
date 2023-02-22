@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <SchemaField>
       <SchemaVoidField x-component="Title" x-content="label为空时的展示: " />
@@ -446,4 +446,8 @@ export default {
     }
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

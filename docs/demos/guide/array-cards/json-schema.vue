@@ -1,4 +1,7 @@
 <template>
+  <div>待定</div>
+</template>
+<!-- <template>
   <FormProvider :form="form">
     <SchemaField :schema="schema" />
     <Submit @submit="log">提交</Submit>
@@ -143,4 +146,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->

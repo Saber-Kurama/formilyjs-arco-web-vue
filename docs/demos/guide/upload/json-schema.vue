@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form" :label-col="4" :wrapper-col="10">
     <SchemaField :schema="schema" />
     <FormButtonGroup align-form-item>
@@ -99,4 +99,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

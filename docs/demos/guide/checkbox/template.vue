@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form">
     <Field
       name="single"
@@ -46,4 +46,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

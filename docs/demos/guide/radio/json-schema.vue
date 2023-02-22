@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form">
     <SchemaField :schema="schema" />
     <Submit @submit="onSubmit">提交</Submit>
@@ -58,4 +58,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

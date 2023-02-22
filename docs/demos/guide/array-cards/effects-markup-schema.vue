@@ -1,5 +1,5 @@
 <template>
-  <FormProvider :form="form">
+  <!-- <FormProvider :form="form">
     <SchemaField>
       <SchemaArrayField
         name="array"
@@ -50,64 +50,66 @@
       </SchemaArrayField>
     </SchemaField>
     <Submit @submit="log">提交</Submit>
-  </FormProvider>
+  </FormProvider> -->
+
+  <div>待定</div>
 </template>
 
 <script>
-import { createForm, onFieldChange, onFieldReact } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
-import {
-  FormItem,
-  FormButtonGroup,
-  Submit,
-  Input,
-  ArrayCards,
-} from '@dangojs/formily-arco-web-vue'
-import { Button } from '@arco-design/web-vue'
+// import { createForm, onFieldChange, onFieldReact } from '@formily/core'
+// import { FormProvider, createSchemaField } from '@formily/vue'
+// import {
+//   FormItem,
+//   FormButtonGroup,
+//   Submit,
+//   Input,
+//   ArrayCards,
+// } from '@dangojs/formily-arco-web-vue'
+// import { Button } from '@arco-design/web-vue'
 
-const SchemaField = createSchemaField({
-  components: {
-    FormItem,
-    Input,
-    ArrayCards,
-  },
-})
+// const SchemaField = createSchemaField({
+//   components: {
+//     FormItem,
+//     Input,
+//     ArrayCards,
+//   },
+// })
 
-export default {
-  components: {
-    FormProvider,
-    FormButtonGroup,
-    Button,
-    Submit,
-    ...SchemaField,
-  },
+// export default {
+//   components: {
+//     FormProvider,
+//     FormButtonGroup,
+//     Button,
+//     Submit,
+//     ...SchemaField,
+//   },
 
-  data() {
-    const form = createForm({
-      effects: () => {
-        //主动联动模式
-        onFieldChange('array.*.aa', ['value'], (field, form) => {
-          form.setFieldState(field.query('.bb'), (state) => {
-            state.visible = field.value != '123'
-          })
-        })
-        //被动联动模式
-        onFieldReact('array.*.dd', (field) => {
-          field.visible = field.query('.cc').get('value') != '123'
-        })
-      },
-    })
+//   data() {
+//     const form = createForm({
+//       effects: () => {
+//         //主动联动模式
+//         onFieldChange('array.*.aa', ['value'], (field, form) => {
+//           form.setFieldState(field.query('.bb'), (state) => {
+//             state.visible = field.value != '123'
+//           })
+//         })
+//         //被动联动模式
+//         onFieldReact('array.*.dd', (field) => {
+//           field.visible = field.query('.cc').get('value') != '123'
+//         })
+//       },
+//     })
 
-    return {
-      form,
-    }
-  },
-  methods: {
-    log(values) {
-      console.log(values)
-    },
-  },
-}
+//     return {
+//       form,
+//     }
+//   },
+//   methods: {
+//     log(values) {
+//       console.log(values)
+//     },
+//   },
+// }
 </script>
 
 <style lang="scss" scoped></style>

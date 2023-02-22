@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form" :label-col="6" :wrapper-col="10">
     <SchemaField>
       <SchemaVoidField
@@ -123,4 +123,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped></style> -->
+
+<template>
+  <div>待定</div>
+</template>

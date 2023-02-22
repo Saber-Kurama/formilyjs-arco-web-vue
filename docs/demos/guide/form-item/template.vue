@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <Form :form="form">
     <Field
       name="input"
@@ -33,4 +33,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

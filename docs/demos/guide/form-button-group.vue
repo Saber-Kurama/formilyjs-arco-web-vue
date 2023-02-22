@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <FormProvider :form="form">
     <FormLayout :labelCol="6" :wrapperCol="10">
       <SchemaField>
@@ -59,4 +59,8 @@ export default {
     },
   },
 }
-</script>
+</script> -->
+
+<template>
+  <div>待定</div>
+</template>

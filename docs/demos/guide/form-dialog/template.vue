@@ -1,4 +1,4 @@
-<script setup lang="tsx">
+<!-- <script setup lang="tsx">
 import {
   FormDialog,
   FormLayout,
@@ -73,4 +73,8 @@ const handleOpen = () => {
 
 <template>
   <Button @click="handleOpen">点击打开表单</Button>
+</template> -->
+
+<template>
+  <div>待定</div>
 </template>
