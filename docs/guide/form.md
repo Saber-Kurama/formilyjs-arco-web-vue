@@ -13,6 +13,10 @@
 
 <dumi-previewer demoPath="guide/form/json-schema" />
 
+## JSON Schema 表单验证案例
+
+<dumi-previewer demoPath="guide/form/json-schema-validation" />
+
 ## API
 
 布局相关的 API 属性，我们参考 [FormLayout](./form-layout) 即可，剩下是 Form 组件独有的 API 属性
