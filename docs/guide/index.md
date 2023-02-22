@@ -61,10 +61,10 @@
 
 ```bash
 $ npm install --save @arco-design/web-vue
-$ npm install --save @formily/core @formily/vue @vue/composition-api @dangojs/formily-arco-web-vue
+$ npm install --save @formily/core @formily/vue  @dangojs/formily-arco-web-vue
 ```
 
-## 按需打包
+## 按需打包 ---- todo
 
 `ArcoWebVue` 按需引入参见 [https://element.eleme.io/#/zh-CN/component/quickstart#an-xu-yin-ru](https://element.eleme.io/#/zh-CN/component/quickstart#an-xu-yin-ru)
 

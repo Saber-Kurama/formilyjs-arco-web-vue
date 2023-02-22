@@ -48,7 +48,7 @@ import {
   FormItem,
   FormButtonGroup,
   Submit,
-} from '@formily/arco-web-vue'
+} from '@dangojs/formily-arco-web-vue'
 
 const form = createForm()
 const fields = createSchemaField({ components: { Input, Select, FormItem } })

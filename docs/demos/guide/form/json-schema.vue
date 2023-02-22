@@ -2,7 +2,7 @@
 import { createForm } from '@formily/core'
 import { createSchemaField, FormProvider } from '@formily/vue'
 import { Button, Space, RadioGroup, Radio } from '@arco-design/web-vue'
-import { Form, FormItem, Input } from '@formily/arco-web-vue/src/index'
+import { Form, FormItem, Input } from '@dangojs/formily-arco-web-vue'
 import { ref } from 'vue'
 
 const layout = ref('horizontal')

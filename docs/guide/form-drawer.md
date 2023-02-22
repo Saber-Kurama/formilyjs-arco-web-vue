@@ -4,15 +4,15 @@
 
 ## Markup Schema 案例
 
-<dumi-previewer demoPath="guide/form-drawer/markup-schema" />
+<!-- <dumi-previewer demoPath="guide/form-drawer/markup-schema" /> -->
 
 ## JSON Schema 案例
 
-<dumi-previewer demoPath="guide/form-drawer/json-schema" />
+<!-- <dumi-previewer demoPath="guide/form-drawer/json-schema" /> -->
 
 ## Template 案例
 
-<dumi-previewer demoPath="guide/form-drawer/template" />
+<!-- <dumi-previewer demoPath="guide/form-drawer/template" /> -->
 
 ## API
 

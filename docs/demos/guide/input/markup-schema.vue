@@ -16,13 +16,13 @@
     </SchemaField>
     <Submit @submit="log">提交</Submit>
   </FormProvider> -->
-  <div>markup Scheama</div>
+  <div>markup Scheama 待补充</div>
 </template>
 
 <script>
 // import { createForm } from '@formily/core'
 // import { createSchemaField, FormProvider } from '@formily/vue'
-// import { FormItem, Input, Submit } from '@formily/arco-web-vue/src/index'
+// import { FormItem, Input, Submit } from '@dangojs/formily-arco-web-vue'
 
 // const form = createForm()
 // const fields = createSchemaField({

@@ -1,10 +1,4 @@
-<template>
-  <FormDialogPortal :id="portalId">
-    <Button @click="handleOpen">点击打开表单</Button>
-  </FormDialogPortal>
-</template>
-
-<script>
+<script setup lang="tsx">
 import {
   FormDialog,
   FormLayout,
@@ -67,45 +61,41 @@ const DialogForm = {
     )
   },
 }
-
-export default {
-  components: { Button, FormDialogPortal: FormDialog.Portal },
-  data() {
-    return {
-      portalId: '可以传，也可以不传的ID，默认是form-dialog',
-    }
-  },
-  provide: {
-    foo: '自定义上下文可以直接传到弹窗内部，只需要ID一致即可',
-  },
-  methods: {
-    handleOpen() {
-      FormDialog('弹框表单', this.portalId, DialogForm)
-        .forOpen((payload, next) => {
-          setTimeout(() => {
-            next({
-              initialValues: {
-                aaa: '123',
-              },
-            })
-          }, 1000)
+const portalId = '可以传，也可以不传的ID，默认是form-dialog'
+const handleOpen = () => {
+  FormDialog('弹框表单', portalId, DialogForm)
+    .forOpen((payload, next) => {
+      setTimeout(() => {
+        next({
+          initialValues: {
+            aaa: '123',
+          },
         })
-        .forConfirm((payload, next) => {
-          setTimeout(() => {
-            console.log(payload)
-            next(payload)
-          }, 1000)
-        })
-        .forCancel((payload, next) => {
-          setTimeout(() => {
-            console.log(payload)
-            next(payload)
-          }, 1000)
-        })
-        .open()
-        .then(console.log)
-        .catch(console.error)
-    },
-  },
+      }, 1000)
+    })
+    .forConfirm((payload, next) => {
+      setTimeout(() => {
+        console.log(payload)
+        next(payload)
+      }, 1000)
+    })
+    .forCancel((payload, next) => {
+      setTimeout(() => {
+        console.log(payload)
+        next(payload)
+      }, 1000)
+    })
+    .open()
+    .then(console.log)
+    .catch(console.error)
 }
+//  provide: {
+//     foo: '自定义上下文可以直接传到弹窗内部，只需要ID一致即可',
+//   },
 </script>
+
+<template>
+  <FormDialogPortal :id="portalId">
+    <Button @click="handleOpen">点击打开表单</Button>
+  </FormDialogPortal>
+</template>

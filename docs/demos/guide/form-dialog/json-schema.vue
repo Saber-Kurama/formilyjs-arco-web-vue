@@ -58,16 +58,16 @@ const DialogForm = {
       schema,
     }
   },
-  render(h) {
-    return (
-      <FormLayout labelCol={6} wrapperCol={10}>
-        <SchemaField schema={this.schema} />
-        <FormDialog.Footer>
-          <span style={{ marginLeft: '4px' }}>扩展文案</span>
-        </FormDialog.Footer>
-      </FormLayout>
-    )
-  },
+  // render(h) {
+  //   return (
+  //     <FormLayout labelCol={6} wrapperCol={10}>
+  //       <SchemaField schema={this.schema} />
+  //       <FormDialog.Footer>
+  //         <span>扩展文案</span>
+  //       </FormDialog.Footer>
+  //     </FormLayout>
+  //   )
+  // },
 }
 
 export default {
