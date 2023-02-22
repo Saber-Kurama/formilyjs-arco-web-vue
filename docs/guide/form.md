@@ -2,11 +2,16 @@
 
 > FormProvider + FormLayout + form 标签的组合组件，可以帮助我们快速实现带回车提交的且能批量布局的表单
 
-## 使用案例
+<!-- ## 使用案例
 
-<dumi-previewer demoPath="guide/form" />
+<dumi-previewer demoPath="guide/form/form" />
 
-> 注意：想要实现回车提交，我们在使用 Submit 组件的时候不能给其传 submit 事件，否则回车提交会失效，这样做的目的是为了防止用户同时在多处写 submit 事件监听器，处理逻辑不一致的话，提交时很难定位问题。
+> 注意：想要实现回车提交，我们在使用 Submit 组件的时候不能给其传 submit 事件，否则回车提交会失效，这样做的目的是为了防止用户同时在多处写 submit 事件监听器，处理逻辑不一致的话，提交时很难定位问题。 -->
+
+
+## JSON Schema 案例
+
+<dumi-previewer demoPath="guide/form/json-schema" />
 
 ## API
 
