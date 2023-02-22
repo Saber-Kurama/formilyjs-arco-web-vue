@@ -42,7 +42,7 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
       {
         text: 'GITHUB',
-        link: '',
+        link: 'https://github.com/Saber-Kurama/formilyjs-arco-web-vue.git',
       },
     ],
     sidebar: {

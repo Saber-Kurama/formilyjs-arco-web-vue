@@ -1,6 +1,39 @@
-<!-- <template>
+<script setup lang="ts">
+import { createForm } from '@formily/core'
+import { FormProvider, createSchemaField } from '@formily/vue'
+import {
+  FormItem,
+  // FormButtonGroup,
+  Submit,
+  Input,
+  // Select,
+  // Space,
+  // DatePicker,
+  // ArrayItems,
+} from '@dangojs/formily-arco-web-vue'
+import { Button } from '@arco-design/web-vue'
+
+const SchemaField = createSchemaField({
+  components: {
+    FormItem,
+    // Space,
+    Input,
+    // Select,
+    // DatePicker,
+    // ArrayItems,
+  },
+})
+const form = createForm()
+
+const log = (values) => {
+  console.log(values)
+}
+</script>
+
+<template>
   <FormProvider :form="form">
-    <SchemaField>
+    <SchemaField></SchemaField>
+    <!-- <SchemaField>
       <SchemaArrayField
         name="string_array"
         title="字符串数组"
@@ -127,65 +160,9 @@
         </SchemaObjectField>
         <SchemaVoidField x-component="ArrayItems.Addition" title="添加条目" />
       </SchemaArrayField>
-    </SchemaField>
-    <FormButtonGroup>
-      <Submit @submit="log">提交</Submit>
-    </FormButtonGroup>
+    </SchemaField> -->
+    <!-- <FormButtonGroup> -->
+    <Submit @submit="log">提交</Submit>
+    <!-- </FormButtonGroup> -->
   </FormProvider>
-</template>
-
-<script>
-import { createForm } from '@formily/core'
-import { FormProvider, createSchemaField } from '@formily/vue'
-import {
-  FormItem,
-  FormButtonGroup,
-  Submit,
-  Input,
-  Select,
-  Space,
-  DatePicker,
-  ArrayItems,
-} from '@dangojs/formily-arco-web-vue'
-import { Button } from '@arco-design/web-vue'
-
-const SchemaField = createSchemaField({
-  components: {
-    FormItem,
-    Space,
-    Input,
-    Select,
-    DatePicker,
-    ArrayItems,
-  },
-})
-
-export default {
-  components: {
-    FormProvider,
-    FormButtonGroup,
-    Button,
-    Submit,
-    ...SchemaField,
-  },
-
-  data() {
-    const form = createForm()
-
-    return {
-      form,
-    }
-  },
-  methods: {
-    log(values) {
-      console.log(values)
-    },
-  },
-}
-</script>
-
-<style lang="scss" scoped></style> -->
-
-<template>
-  <div>待定</div>
 </template>
