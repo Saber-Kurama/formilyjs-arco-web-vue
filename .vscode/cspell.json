@@ -15,7 +15,7 @@
     "repos",
     "alibaba",
     "Lifecycles",
-    "@arco/web-vue",
+    "@arco-design/web-vue",
     "ArcoWebVue",
     "alifd",
     "Mixins",

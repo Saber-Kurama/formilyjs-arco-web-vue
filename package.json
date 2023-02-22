@@ -92,7 +92,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/formilyjs/@arco/web-vue.git"
+    "url": "git+https://github.com/formilyjs/@arco-design/web-vue.git"
   },
   "config": {
     "ghooks": {

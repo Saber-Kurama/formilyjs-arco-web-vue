@@ -8,9 +8,9 @@
     "npm": ">=3.0.0"
   },
   "module": "esm",
-  "umd:main": "dist/formily.@arco/web-vue-settings-form.umd.production.js",
-  "unpkg": "dist/formily.@arco/web-vue-settings-form.umd.production.js",
-  "jsdelivr": "dist/formily.@arco/web-vue-settings-form.umd.production.js",
+  "umd:main": "dist/formily.@arco-design/web-vue-settings-form.umd.production.js",
+  "unpkg": "dist/formily.@arco-design/web-vue-settings-form.umd.production.js",
+  "jsdelivr": "dist/formily.@arco-design/web-vue-settings-form.umd.production.js",
   "jsnext:main": "esm",
   "sideEffects": [
     "dist/*",
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/formilyjs/@arco/web-vue.git"
+    "url": "git+https://github.com/formilyjs/@arco-design/web-vue.git"
   },
   "bugs": {
-    "url": "https://github.com/formilyjs/@arco/web-vue/issues"
+    "url": "https://github.com/formilyjs/@arco-design/web-vue/issues"
   },
-  "homepage": "https://github.com/formilyjs/@arco/web-vue#readme",
+  "homepage": "https://github.com/formilyjs/@arco-design/web-vue#readme",
   "publishConfig": {
     "access": "public"
   },

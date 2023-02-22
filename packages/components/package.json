@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/formilyjs/@arco/web-vue.git"
+    "url": "git+https://github.com/formilyjs/@arco-design/web-vue.git"
   },
   "bugs": {
-    "url": "https://github.com/formilyjs/@arco/web-vue/issues"
+    "url": "https://github.com/formilyjs/@arco-design/web-vue/issues"
   },
-  "homepage": "https://github.com/formilyjs/@arco/web-vue#readme",
+  "homepage": "https://github.com/formilyjs/@arco-design/web-vue#readme",
   "publishConfig": {
     "access": "public"
   },

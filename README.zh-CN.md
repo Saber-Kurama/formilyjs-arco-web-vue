@@ -5,8 +5,8 @@
 <img src="https://img.shields.io/npm/dt/@dangojs/formily-arco-web-vue"/>
 <img src="https://img.shields.io/npm/dm/@dangojs/formily-arco-web-vue"/>
 <a href="https://www.npmjs.com/package/@dangojs/formily-arco-web-vue"><img src="https://img.shields.io/npm/v/@dangojs/formily-arco-web-vue.svg"></a>
-<a href="https://codecov.io/gh/formilyjs/@arco/web-vue">
-  <img src="https://codecov.io/gh/formilyjs/@arco/web-vue/branch/master/graph/badge.svg?token=3V9RU8Wh9d"/>
+<a href="https://codecov.io/gh/formilyjs/@arco-design/web-vue">
+  <img src="https://codecov.io/gh/formilyjs/@arco-design/web-vue/branch/master/graph/badge.svg?token=3V9RU8Wh9d"/>
 </a>
 <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/>
 <a href="https://github.com/actions-cool/issues-helper">
@@ -18,7 +18,7 @@
 
 ## 概要
 
-这是一个结合了 Formily & @arco/web-vue 的超酷组件库.
+这是一个结合了 Formily & @arco-design/web-vue 的超酷组件库.
 
 ## 特性
 
@@ -35,7 +35,7 @@
 
 ## 官网
 
-https://@arco/web-vue.formilyjs.org
+https://@arco-design/web-vue.formilyjs.org
 
 ## 生态产品
 
@@ -50,7 +50,7 @@ https://@arco/web-vue.formilyjs.org
 ## 贡献者
 
 This project exists thanks to all the people who contribute.
-<a href="https://github.com/formilyjs/@arco/web-vue/graphs/contributors"><img src="https://contrib.rocks/image?repo=formilyjs/@arco/web-vue" /></a>
+<a href="https://github.com/formilyjs/@arco-design/web-vue/graphs/contributors"><img src="https://contrib.rocks/image?repo=formilyjs/@arco-design/web-vue" /></a>
 
 ## LICENSE
 

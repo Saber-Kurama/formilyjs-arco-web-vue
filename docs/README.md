@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Formily ArcoWebVue
-tagline: 基于 @arco/web-vue 封装的Formily2.x组件体系
+tagline: 基于 @arco-design/web-vue 封装的Formily2.x组件体系
 actionText: 开发指南
 actionLink: /guide/
 features:
@@ -19,7 +19,7 @@ footer: Open-source MIT Licensed | Copyright © 2019-present
 vue3:
 
 ```bash
-$ npm install --save @arco/web-vue
+$ npm install --save @arco-design/web-vue
 $ npm install --save @formily/core @formily/vue @dangojs/formily-arco-web-vue
 ```
 

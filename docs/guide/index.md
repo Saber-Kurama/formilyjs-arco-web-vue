@@ -60,7 +60,7 @@
 ## 安装
 
 ```bash
-$ npm install --save @arco/web-vue
+$ npm install --save @arco-design/web-vue
 $ npm install --save @formily/core @formily/vue @vue/composition-api @dangojs/formily-arco-web-vue
 ```
 
@@ -90,7 +90,7 @@ yarn add babel-plugin-import --dev
     [
       "component",
       {
-        "libraryName": "@arco/web-vue",
+        "libraryName": "@arco-design/web-vue",
         "styleLibraryName": "theme-chalk"
       }
     ],

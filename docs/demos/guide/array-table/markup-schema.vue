@@ -99,7 +99,7 @@ import {
   Input,
   Editable,
 } from '@dangojs/formily-arco-web-vue'
-import { Button, Alert } from '@arco/web-vue'
+import { Button, Alert } from '@arco-design/web-vue'
 
 const fields = createSchemaField({
   components: {

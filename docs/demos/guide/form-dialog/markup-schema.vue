@@ -11,7 +11,7 @@ import {
   FormItem,
   Input,
 } from '@dangojs/formily-arco-web-vue'
-import { Button } from '@arco/web-vue'
+import { Button } from '@arco-design/web-vue'
 import { createSchemaField } from '@formily/vue'
 
 const { SchemaField, SchemaStringField } = createSchemaField({
