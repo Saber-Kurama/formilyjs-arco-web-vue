@@ -1,5 +1,6 @@
+export * from './array-items'
 export * from './form'
 export * from './form-item'
 export * from './input'
 export * from './input-number'
-export * from './submit/index'
+export * from './submit'

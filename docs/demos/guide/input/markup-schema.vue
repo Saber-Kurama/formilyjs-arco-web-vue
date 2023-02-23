@@ -27,8 +27,14 @@ const log = (value) => {
           x-component="Input"
         />
         <SchemaStringField
-          name="textarea"
-          title="输入框"
+          name="name[0]"
+          title="名称1"
+          x-decorator="FormItem"
+          x-component="Input"
+        />
+        <SchemaStringField
+          name="name[1]"
+          title="名称2"
           x-decorator="FormItem"
           x-component="Input"
         />

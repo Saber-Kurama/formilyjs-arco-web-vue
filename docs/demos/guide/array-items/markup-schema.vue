@@ -13,7 +13,7 @@ import {
 } from '@dangojs/formily-arco-web-vue'
 import { Button } from '@arco-design/web-vue'
 
-const SchemaField = createSchemaField({
+const { SchemaField } = createSchemaField({
   components: {
     FormItem,
     // Space,
@@ -32,7 +32,7 @@ const log = (values) => {
 
 <template>
   <FormProvider :form="form">
-    <SchemaField></SchemaField>
+    <SchemaField> </SchemaField>
     <!-- <SchemaField>
       <SchemaArrayField
         name="string_array"

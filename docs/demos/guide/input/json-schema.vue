@@ -6,32 +6,48 @@ import {
   FormItem,
   Input,
   Submit,
+  ArraySimpleList,
 } from '@dangojs/formily-arco-web-vue/src/index'
+import { arrayBuffer } from 'stream/consumers'
+import input from 'packages/components/lib/input'
+import { type } from 'os'
 
 const schema = {
   type: 'object',
   properties: {
-    input: {
+    user: {
       type: 'string',
-      title: '输入框',
+      title: '用户',
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
-    textarea: {
-      type: 'string',
-      title: '文本框',
-      'x-decorator': 'FormItem',
-      'x-component': 'Input',
+    hobby: {
+      type: 'array',
+      'x-component': 'ArraySimpleList',
+      items: [
+        {
+          type: 'string',
+          title: '爱好',
+          'x-decorator': 'FormItem',
+          'x-component': 'Input',
+        },
+      ],
     },
   },
 }
 
-const form = createForm()
+const form = createForm({
+  initialValues: {
+    user: '',
+    hobby: ['', ''],
+  },
+})
 const { SchemaField } = createSchemaField({
   components: {
     Form,
     FormItem,
     Input,
+    ArraySimpleList,
   },
 })
 
