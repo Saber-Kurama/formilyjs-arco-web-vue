@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { createForm } from '@formily/core'
+import { FormProvider, Field } from '@formily/vue'
+import { FormItem, InputNumber, Submit } from '@dangojs/formily-arco-web-vue'
+
+const form = createForm()
+
+const log = (value) => {
+  console.log(value)
+}
+</script>
+
 <template>
   <FormProvider :form="form">
     <Field
@@ -16,27 +28,3 @@
     <Submit @submit="log">提交</Submit>
   </FormProvider>
 </template>
-
-<script>
-import { createForm } from '@formily/core'
-import { FormProvider, Field } from '@formily/vue'
-import { FormItem, InputNumber, Submit } from '@dangojs/formily-arco-web-vue'
-
-const form = createForm()
-
-export default {
-  components: { FormProvider, Field, Submit },
-  data() {
-    return {
-      FormItem,
-      InputNumber,
-      form,
-    }
-  },
-  methods: {
-    log(value) {
-      console.log(value)
-    },
-  },
-}
-</script>

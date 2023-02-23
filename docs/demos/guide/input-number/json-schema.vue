@@ -1,11 +1,4 @@
-<template>
-  <FormProvider :form="form">
-    <SchemaField :schema="schema" />
-    <Submit @submit="onSubmit">提交</Submit>
-  </FormProvider>
-</template>
-
-<script>
+<script setup lang="ts">
 import { createForm } from '@formily/core'
 import { createSchemaField, FormProvider } from '@formily/vue'
 import { FormItem, InputNumber, Submit } from '@dangojs/formily-arco-web-vue'
@@ -35,18 +28,13 @@ const { SchemaField } = createSchemaField({
   },
 })
 
-export default {
-  components: { FormProvider, SchemaField, Submit },
-  data() {
-    return {
-      form,
-      schema,
-    }
-  },
-  methods: {
-    onSubmit(value) {
-      console.log(value)
-    },
-  },
+const log = (value) => {
+  console.log(value)
 }
 </script>
+<template>
+  <FormProvider :form="form">
+    <SchemaField :schema="schema" />
+    <Submit @submit="log">提交</Submit>
+  </FormProvider>
+</template>
