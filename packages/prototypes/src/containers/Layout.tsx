@@ -1,5 +1,5 @@
 import { each } from '@formily/shared'
-import { defineComponent, PropType, ref, watch } from 'vue'
+import { computed, defineComponent, PropType, provide, ref, watch } from 'vue'
 import { DesignerLayoutSymbol, useContext } from '../context'
 import { IDesignerLayoutContext, IDesignerLayoutProps } from '../types'
 
@@ -43,6 +43,17 @@ export const Layout = defineComponent({
         return slots.default?.()
       }
     }
+
+    provide(
+      DesignerLayoutSymbol,
+      computed(() => {
+        return {
+          theme: props.theme!,
+          prefixCls: props.prefixCls!,
+          position: props.position!,
+        }
+      })
+    )
 
     return () => {
       return (

@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import {
   Designer,
   Workbench,
+  StudioPanel,
 } from '@dangojs/formily-arco-web-vue-prototypes/src'
 import { createDesigner } from '@designable/core'
 
@@ -12,7 +13,9 @@ const engine = createDesigner()
 <template>
   <div>
     <Designer :engine="engine">
-      <Workbench> sdasd </Workbench>
+      <Workbench>
+        <StudioPanel>sdasd</StudioPanel>
+      </Workbench>
     </Designer>
   </div>
 </template>

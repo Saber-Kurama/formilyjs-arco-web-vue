@@ -57,7 +57,6 @@ export const Designer = defineComponent({
       return (
         <Layout {...{ theme: props.theme, prefixCls: props.prefixCls }}>
           {slots.default?.()}
-          开始写界面
         </Layout>
       )
     }

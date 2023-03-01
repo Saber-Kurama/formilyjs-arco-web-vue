@@ -45,5 +45,7 @@
     }
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "classnames": "^2.3.2"
+  }
 }
