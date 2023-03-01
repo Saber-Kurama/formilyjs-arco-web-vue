@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import { Designer } from '@dangojs/formily-arco-web-vue-prototypes/src'
+import {
+  Designer,
+  Workbench,
+} from '@dangojs/formily-arco-web-vue-prototypes/src'
+import { createDesigner } from '@designable/core'
+
+const engine = createDesigner()
 </script>
 
 <template>
   <div>
-    <Designer></Designer>
+    <Designer :engine="engine">
+      <Workbench> sdasd </Workbench>
+    </Designer>
   </div>
 </template>
 

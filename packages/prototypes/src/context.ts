@@ -1,5 +1,5 @@
 import { TreeNode, Engine } from '@designable/core'
-import { InjectionKey, Ref } from 'vue'
+import { inject, InjectionKey, ref, Ref } from 'vue'
 import {
   IDesignerLayoutContext,
   IWorkspaceContext,
@@ -16,6 +16,15 @@ import {
 
 // export const WorkspaceContext = createContext<IWorkspaceContext>(null)
 
+export const DesignerLayoutSymbol: InjectionKey<Ref<IDesignerLayoutContext>> =
+  Symbol('DesignerLayoutSymbol')
+
 export const DesignerEngineSymbol: InjectionKey<Ref<Engine>> = Symbol(
   'DesignerEngineSymbol'
 )
+export const WorkspaceSymbol: InjectionKey<Ref<IWorkspaceContext>> =
+  Symbol('WorkspaceSymbol')
+
+export function useContext<T>(key: InjectionKey<Ref<T>>) {
+  return inject(key, ref())
+}

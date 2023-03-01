@@ -11,6 +11,7 @@ import { Engine, GlobalRegistry } from '@designable/core'
 import { useDesigner } from '../hooks'
 import { IDesignerProps } from '../types'
 import { DesignerEngineSymbol } from '../context'
+import { Layout } from './Layout'
 
 export const Designer = defineComponent({
   name: 'DnDesigner',
@@ -27,7 +28,7 @@ export const Designer = defineComponent({
       default: 'light',
     },
   },
-  setup(props, ctx) {
+  setup(props, { slots }) {
     const engine = useDesigner()
     const refInstance = ref<Engine | null>(null)
     provide(DesignerEngineSymbol, toRef(props, 'engine'))
@@ -53,7 +54,12 @@ export const Designer = defineComponent({
         'There can only be one Designable Engine Context in the React Tree'
       )
     return () => {
-      return <div>开始写界面</div>
+      return (
+        <Layout {...{ theme: props.theme, prefixCls: props.prefixCls }}>
+          {slots.default?.()}
+          开始写界面
+        </Layout>
+      )
     }
   },
 })
