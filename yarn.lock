@@ -56,6 +56,20 @@
     resize-observer-polyfill "^1.5.1"
     scroll-into-view-if-needed "^2.2.28"
 
+"@arco-design/web-vue@^2.43.2":
+  version "2.43.2"
+  resolved "https://registry.yarnpkg.com/@arco-design/web-vue/-/web-vue-2.43.2.tgz#48e6e496acdde50775a750d3a0777aa67c9e1d35"
+  integrity sha512-g07sP64WI7v+U0NzfhdOAOvGPbT3hksjLELHcNVb350y9SpjG7PGGK2wvOVGla+JTnE6LPqxwlIBbXErTI6hbw==
+  dependencies:
+    "@arco-design/color" "^0.4.0"
+    b-tween "^0.3.3"
+    b-validate "^1.3.1"
+    compute-scroll-into-view "^1.0.17"
+    dayjs "^1.10.3"
+    number-precision "^1.5.0"
+    resize-observer-polyfill "^1.5.1"
+    scroll-into-view-if-needed "^2.2.28"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.18.6":
   version "7.18.6"
   resolved "https://registry.npmmirror.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"

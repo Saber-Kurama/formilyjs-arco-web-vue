@@ -14,7 +14,7 @@ import { DesignerEngineSymbol } from '../context'
 import { Layout } from './Layout'
 
 export const Designer = defineComponent({
-  name: 'DnDesigner',
+  name: 'Designer',
   props: {
     engine: {
       type: Object as PropType<IDesignerProps['engine']>,

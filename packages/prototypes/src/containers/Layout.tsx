@@ -4,7 +4,7 @@ import { DesignerLayoutSymbol, useContext } from '../context'
 import { IDesignerLayoutContext, IDesignerLayoutProps } from '../types'
 
 export const Layout = defineComponent({
-  name: 'DnLayout',
+  name: 'Layout',
   props: {
     theme: {
       type: String as PropType<IDesignerLayoutProps['theme']>,

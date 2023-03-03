@@ -34,7 +34,7 @@ const StudioPanelInternal = defineComponent({
 })
 
 export const StudioPanel = defineComponent({
-  name: 'DnStudioPanel',
+  name: 'StudioPanel',
   props: {
     theme: {
       type: String as PropType<IDesignerLayoutProps['theme']>,

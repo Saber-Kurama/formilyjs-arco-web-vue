@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 import {
   Designer,
   Workbench,
   StudioPanel,
+  CompositePanel,
 } from '@dangojs/formily-arco-web-vue-prototypes/src'
 import { createDesigner } from '@designable/core'
+import Logo from './components/Logo.vue'
 
 const engine = createDesigner()
 </script>
@@ -14,7 +15,12 @@ const engine = createDesigner()
   <div>
     <Designer :engine="engine">
       <Workbench>
-        <StudioPanel>sdasd</StudioPanel>
+        <StudioPanel>
+          <template #logo>
+            <Logo />
+          </template>
+          <CompositePanel> sdasdadsasdasd </CompositePanel>
+        </StudioPanel>
       </Workbench>
     </Designer>
   </div>

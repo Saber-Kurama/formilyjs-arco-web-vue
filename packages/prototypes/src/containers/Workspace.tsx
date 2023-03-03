@@ -5,7 +5,7 @@ import { useDesigner } from '../hooks'
 import { IWorkspaceContext } from '../types'
 
 export const Workspace = defineComponent({
-  name: 'DnWorkspace',
+  name: 'Workspace',
   props: {
     id: String,
     title: String,
