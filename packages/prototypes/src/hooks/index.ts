@@ -1,4 +1,5 @@
 export * from './useDesigner'
+export * from './useTheme'
 export * from './useWorkbench'
 export * from './useLayout'
 // export * from './useHistory'

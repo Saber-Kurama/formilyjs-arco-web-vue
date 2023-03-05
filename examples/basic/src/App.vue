@@ -19,7 +19,10 @@ const engine = createDesigner()
           <template #logo>
             <Logo />
           </template>
-          <CompositePanel> sdasdadsasdasd </CompositePanel>
+          <CompositePanel>
+            <CompositePanel.Item title="panels.Component" icon="Component">
+            </CompositePanel.Item>
+          </CompositePanel>
         </StudioPanel>
       </Workbench>
     </Designer>

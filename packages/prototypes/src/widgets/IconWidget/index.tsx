@@ -1,11 +1,30 @@
-import { isFn, isPlainObj, isStr } from '@formily/shared'
-import { defineComponent, isVNode, PropType, unref, VNode } from 'vue'
-import { TooltipInstance } from '@arco-design/web-vue/es/tooltip'
+import { isFn, isObj, isPlainObj, isStr } from '@formily/shared'
+import { observer } from '@formily/reactive-vue'
+import {
+  defineComponent,
+  InjectionKey,
+  isVNode,
+  onMounted,
+  PropType,
+  Ref,
+  ref,
+  unref,
+  VNode,
+} from 'vue'
+import { Tooltip } from '@arco-design/web-vue'
+import type { TooltipInstance } from '@arco-design/web-vue/es/tooltip'
 import cls from 'classnames'
-import { usePrefix, useRegistry } from '../../hooks'
+import { usePrefix, useRegistry, useTheme } from '../../hooks'
 import { cloneElement, useStyle } from '../../shared'
+import './styles.less'
+import { useContext } from '../../context'
 
+const IconSymbol: InjectionKey<Ref<IconProviderProps>> = Symbol()
 const isNumSize = (val: any) => /^[\d.]+$/.test(val)
+
+export interface IconProviderProps {
+  tooltip?: boolean
+}
 
 export interface IIconWidgetProps extends HTMLElement {
   tooltip?: TooltipInstance['$props']
@@ -28,6 +47,7 @@ const __IconWidgetInner = defineComponent({
   },
   setup(props, { attrs, emit }) {
     const themeRef = useTheme()
+    const IconContextRef: Ref<IconProviderProps> = useContext(IconSymbol)
     const registry = useRegistry()
     const prefixRef = usePrefix('icon')
     return () => {
@@ -97,23 +117,19 @@ const __IconWidgetInner = defineComponent({
       }
 
       const renderTooltips = (children: any) => {
-        //  const IconContext = unref(IconContextRef)
-        //  if (!isStr(props.infer) && IconContext?.tooltip) return children
-        //  const tooltip =
-        //    props.tooltip || registry.getDesignerMessage(`icons.${props.infer}`)
-        //  if (tooltip) {
-        //    const props = isObj(tooltip) ? tooltip : { content: tooltip }
-        //    const { content, ..._props } = props as any
-        //    return (
-        //      <ElTooltip
-        //        showAfter={200}
-        //        {..._props}
-        //        v-slots={{ content: () => content }}
-        //      >
-        //        {children}
-        //      </ElTooltip>
-        //    )
-        //  }
+        const IconContext = unref(IconContextRef)
+        if (!isStr(props.infer) && IconContext?.tooltip) return children
+        const tooltip =
+          props.tooltip || registry.getDesignerMessage(`icons.${props.infer}`)
+        if (tooltip) {
+          const props = isObj(tooltip) ? tooltip : { content: tooltip }
+          const { content, ..._props } = props as any
+          return (
+            <Tooltip {..._props} v-slots={{ content: () => content }}>
+              {children}
+            </Tooltip>
+          )
+        }
         return children
       }
       if (!props.infer) {
@@ -128,10 +144,36 @@ const __IconWidgetInner = defineComponent({
           }}
           onClick={() => emit('click')}
         >
-          {/* {takeIcon(props.infer)} */}
+          {takeIcon(props.infer)}
         </span>
       )
     }
+  },
+})
+
+export const IconWidget = observer(__IconWidgetInner)
+
+IconWidget.ShadowSVG = defineComponent({
+  props: {
+    width: [Number, String],
+    height: [Number, String],
+    content: String,
+  },
+  setup(props, {}) {
+    const refInstance = ref<HTMLDivElement>()
+    const width = isNumSize(props.width) ? `${props.width}px` : props.width
+    const height = isNumSize(props.height) ? `${props.height}px` : props.height
+
+    onMounted(() => {
+      if (refInstance.value) {
+        const root = refInstance.value.attachShadow({
+          mode: 'open',
+        })
+        root.innerHTML = `<svg viewBox="0 0 1024 1024" style="width:${width};height:${height}">${props.content}</svg>`
+      }
+    })
+
+    return () => <div ref={refInstance}></div>
   },
 })
 

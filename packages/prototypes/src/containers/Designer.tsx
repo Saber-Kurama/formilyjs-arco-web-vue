@@ -12,6 +12,9 @@ import { useDesigner } from '../hooks'
 import { IDesignerProps } from '../types'
 import { DesignerEngineSymbol } from '../context'
 import { Layout } from './Layout'
+import * as icons from '../icons'
+
+GlobalRegistry.registerDesignerIcons(icons)
 
 export const Designer = defineComponent({
   name: 'Designer',
